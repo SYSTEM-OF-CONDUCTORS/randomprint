@@ -27,8 +27,8 @@ while True:
         j_str = urlopen(url).read()
         # print(j_str)
         j_dict = json.loads(j_str)
+        # j_dict = json.loads('{"print" : "true"}')
         print(j_dict)
-        #j_dict = json.loads('{"print" : "true"}')
         if j_dict['print'] == "true":
             print("Start printing!")
             random_print()

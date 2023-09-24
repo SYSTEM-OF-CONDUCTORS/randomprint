@@ -1,11 +1,11 @@
 [Unit]
-Description=Python CGIHTTPServer
+Description=Python HTTPServer
 
 [Service]
 Type=simple
 WorkingDirectory=/home/pi
 User=pi
-ExecStart=/usr/bin/python3 -m http.server --cgi 9693
+ExecStart=/usr/bin/python3 /home/pi/randomprint/server/main.py
 Restart=always
 
 [Install]

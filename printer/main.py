@@ -5,7 +5,7 @@ import json
 from urllib.request import urlopen
 import time
 
-url = "http://localhost:9693/cgi-bin/YesIcan.py"
+url = "http://127.0.0.1:9693/get_json?print=false"
 
 def random_print():
     file_list = glob('*.png') + glob('*.PNG') + glob('*.pdf') + glob('*.PDF') + glob('*.jpg') + glob('*.JPG')
@@ -22,11 +22,12 @@ def random_print():
 
 while True: 
     try: 
-        response = urlopen(url)
-        j = json.loads(response.read())
-        print(j)
-        #j = json.loads('{"print" : "true"}')
-        if j['print'] == "true":
+        j_str = urlopen(url).read()
+        # print(j_str)
+        j_dict = json.loads(j_str)
+        print(j_dict)
+        #j_dict = json.loads('{"print" : "true"}')
+        if j_dict['print'] == "true":
             print("Start printing!")
             random_print()
     except Exception as e:

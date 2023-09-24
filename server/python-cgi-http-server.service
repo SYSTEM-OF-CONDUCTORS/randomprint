@@ -1,0 +1,12 @@
+[Unit]
+Description=Python CGIHTTPServer
+
+[Service]
+Type=simple
+WorkingDirectory=/home/pi
+User=pi
+ExecStart=/usr/bin/python3 -m http.server --cgi 9693
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

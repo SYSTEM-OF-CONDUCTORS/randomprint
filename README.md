@@ -16,3 +16,9 @@ git clone https://github.com/danchouzhou/randomprint.git
 ```
 python3 ./randomprint/printer/main.py
 ```
+Run the script automaticlly by systemd
+```
+sudo cp randomprint.service /etc/systemd/system/
+sudo systemctl daemon-reload
+systemctl enable randomprint.service
+```

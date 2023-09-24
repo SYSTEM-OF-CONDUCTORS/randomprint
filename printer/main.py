@@ -5,6 +5,7 @@ import json
 from urllib.request import urlopen
 import time
 
+# Replace it with your server URL
 url = "http://127.0.0.1:9693/get_json?print=false"
 
 def random_print():
@@ -18,6 +19,7 @@ def random_print():
 
     file_selected = file_list[rnd_num]
     print("The selected file is", file_selected)
+    # Replace it with your CUPS printer
     os.system("lp -d HP_Deskjet_2050_J510_series -o landscape -o fit-to-page -o media=A5 %s" % file_selected)
 
 while True: 

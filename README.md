@@ -7,9 +7,7 @@
 git clone https://github.com/danchouzhou/randomprint.git
 ```
 ### Server
-```
-python3 ./randomprint/printer/server.py
-```
+- [Setup JSON database server](https://github.com/danchouzhou/http_json_db)
 ### Printer
 - Connecte your printer to a Raspberry Pi.
 - Install CUPS and printer driver (such like hplip).

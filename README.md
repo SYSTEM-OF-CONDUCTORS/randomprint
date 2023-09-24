@@ -26,5 +26,5 @@ To run the script automaticlly by systemd
 ```
 sudo cp randomprint.service /etc/systemd/system/
 sudo systemctl daemon-reload
-systemctl enable randomprint.service
+sudo systemctl enable randomprint.service
 ```

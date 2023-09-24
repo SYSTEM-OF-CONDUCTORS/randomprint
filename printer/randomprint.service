@@ -3,7 +3,7 @@ Description=Random Print Service
 
 [Service]
 Type=simple
-WorkingDirectory=/home/admin/randomprint
+WorkingDirectory=/home/admin/randomprint/printer
 ExecStart=/usr/bin/python3 /home/admin/randomprint/printer/main.py
 Restart=always
 

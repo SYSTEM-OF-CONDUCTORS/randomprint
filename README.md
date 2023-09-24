@@ -14,7 +14,7 @@ git clone https://github.com/danchouzhou/randomprint.git
 - Config your printer with CUPS
 - Replace the printer and server URL
 ```
-python3 ./randomprint/printer/main.py
+python3 ./randomprint/printer/randomprint.py
 ```
 Run the script automaticlly by systemd
 ```

@@ -1,6 +1,7 @@
 # Random Print
 - Scan a QR code, it will pickup a file randomly then print
 - Creative Expo Taiwan 2023 @ C-LAB Creators
+![image](./received_273390585652221.jpeg)
 ## Usage
 ### Clone this project
 Clone this project to a Raspberry Pi which connect with your printer.
